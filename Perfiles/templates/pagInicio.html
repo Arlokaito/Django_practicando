@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Style.css' %}"> <!-- CSS externo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Iconos -->
+
+    <title>Presentación de la dupla!!!</title>
+
+    <!-- Fuente Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+</head>
+<body>
+    
+    <!-- Encabezado -->
+    <header id="Encabezado" class="Fondo">
+        <!-- Menú hamburguesa (responsive) -->
+        <input type="checkbox" id="toggle-menu" />
+        <label for="toggle-menu" class="menu-icon">&#9776;</label>
+
+        <nav id="navegacion">
+                <div>
+                    <ul>
+                        <li><a href="#Perfil">Inicio</a></li>
+                        <li><a href="#SobreVale">Sobre Vale</a></li>
+                        <li><a href="#SobreCarlos">Sobre Carlos</a></li>
+                        <li><a href="#Educacion">Educación</a></li>
+                        <li><a href="#Conocimientos">Conocimientos</a></li>
+                        <li><a href="#Portafolio">Portafolio</a></li>
+                        <li><a class="btn" href="{% url 'formulario' %}">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        <!-- Perfiles -->
+        <div id="Perfil">
+            <figure>
+                <img src="https://avatars.githubusercontent.com/u/110511941?s=400&u=51699d183eb3c90e752c552b6ba24c07c084ee6c&v=4" alt="Foto de Carlos"/>
+                <figcaption>
+                    <h1>Carlos Estrada</h1>
+                    <h4>1/2</h4>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="https://avatars.githubusercontent.com/u/213877337?v=4" alt="Foto de Valentina"/>
+                <figcaption>
+                    <h1>Valentina Salinas</h1>
+                    <h4>2/2</h4>
+                </figcaption>
+            </figure>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="Informacion">
+
+        <!-- Sección Sobre Mí -->
+        <section id="SobreVale">
+            <div class="container">
+                <h2>Sobre la Vale</h2>
+                <p>Estoy estudiando la carrera de Analista Programador. Aparte de estudiar, también trabajo y soy mamá de dos maravillosos hijos: Maxi y Renato.</p>
+                <p>En mi hogar también viven mis dos perros, Arya y Zeus, que son parte de mi familia y mis compañeros fieles. Cada día es un desafío, pero también una oportunidad para crecer.</p>
+                <p>Hoy me siento feliz de estar en esta etapa de mi vida. Por momentos no imaginé llegar tan lejos, pero aquí estoy, orgullosa de lo que he logrado y con muchas ganas de seguir aprendiendo y mejorando. Quiero convertirme en una gran profesional y construir un futuro lleno de propósito y bienestar para mí y mi familia.</p>
+                <p>Actualmente tengo 30+1 años, soy Piscis, forevayoung. Te leo el tarot a buen precio con las cartas UNO.</p>
+                <p>Sufro de pánico escénico, pero si me dan un mojito puedo bailar y cantar sin miedo.</p>
+            </div>    
+        </section>
+
+        <section id="SobreCarlos">
+            <div class="container">
+                <h2>Sobre el Carlos</h2>
+                <p>Hola! Soy un apasionado del arte, los videojuegos y la música. Desde pequeño, he explorado diversas formas de expresión artística, encontrando en la guitarra, el piano y la batería mis aliados para crear y compartir emociones. Cantar también es una de mis pasiones, me permite conectar con los demás a través de la voz.</p>
+                <p>Soy una persona feliz, rodeado de amor y apoyo. Tengo una pareja maravillosa y una hija pequeña que llena mi vida de alegría y motivación. Cada día busco equilibrar mis estudios, mis pasiones y mi familia, aprendiendo y creciendo en cada paso.</p>
+                <p>Actualmente tengo los 30-1, soy Géminis y peleo mucho conmigo mismo. A diferencia de la Vale, soy bueno pal webeo sin alcohol, pero si me dan, no tengo problema. ¡Hasta te bailo pascuense!</p>
+                <p>Sufro de insomnio y me da paja venir a clases.</p>
+            </div>    
+        </section>
+
+        <!-- Sección Educación -->
+        <section id="Educacion">
+            <div class="container">
+                <h2>Educación</h2>
+                <div class="Box-grid">
+                    <div class="Box Fondo">
+                        <h3>Analistas Programadores x2</h3>
+                        <p class="date">2024 - Presente</p>
+                        <p>Instituto Inacap</p>
+                        <p>Cursando actualmente con enfoque en desarrollo de software y programación web.</p>
+                    </div>
+
+                    <div class="Box Fondo">
+                        <h3>Futuros Ingenieros en Informática x2</h3>
+                        <p class="date">2026</p>
+                        <p>Instituto Inacap</p>
+                        <p>Proyecto personal que se va a lograr, ¡sí señooool!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Conocimientos -->
+        <section id="Conocimientos">
+            <div class="container">
+                <h2>Nuestros conocimientos (creo)</h2>
+                <div class="Box-grid">
+                    <div class="Box Fondo">
+                        <h4>Python</h4>
+                        <p>Conocimientos sólidos en Python, orientados al desarrollo de funciones reutilizables, estructuras claras y código puro (sin frameworks innecesarios) para construir herramientas funcionales, ligeras y eficientes.</p>
+                    </div>
+                    <div class="Box Fondo">
+                        <h4>SQL</h4>
+                        <p>Experiencia en el diseño, modelado y manejo de bases de datos relacionales, con especialización en Oracle y SQL Server, orientado al desarrollo de soluciones funcionales y consultas eficientes para el manejo de grandes volúmenes de datos.</p>
+                    </div>
+                    <div class="Box Fondo">
+                        <h4>Excel</h4>
+                        <p>Conocimientos intermedios, incluyendo el uso de fórmulas, funciones, tablas dinámicas, filtros, gráficos y organización de datos para análisis eficiente y claro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Portafolio -->
+        <section id="Portafolio">
+            <div class="container">
+                <h2>Nuestros datos</h2>
+                <div class="Box-grid">
+                    <div class="Box Fondo">
+                        <h3>Valentina</h3>
+                        <p>Correo:</p>
+                        <a class="btn" target="_blank" href="https://valenitnas.github.io/ProyectoHTML">Portafolio</a>
+                        <a class="btn" target="_blank" href="https://github.com/ValenitnaS">GitHub</a>
+                    </div>
+                    <div class="Box Fondo">
+                        <h3>Carlos</h3>
+                        <p>Correo:</p>
+                        <a class="btn" target="_blank" href="https://arlokaito.github.io/Portafolio/">Portafolio</a>
+                        <a class="btn" target="_blank" href="https://github.com/Arlokaito">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="container">
+        <!-- Aquí solo dejamos el botón que redirige al formulario -->
+        <div class="boton-contacto">
+            <a class="btn" target="_blank" href="{% url 'formulario' %}">Ir al Formulario de Contacto</a>
+        </div>
+    </div>    
+
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <div class="container-footer">
+            <h6>&copy; 2025 Mi Sitio Web</h6>
+        </div>
+    </footer>
+
+</body>
+
+</html>

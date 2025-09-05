@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Form.css' %}"> <!-- Enlaza al CSS externo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Librería de iconos -->
+
+    <title>Formulario de contacto</title>
+
+    <!-- Importación fuente Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- Botón Volver al inicio -->
+    <div class="volver-container">
+        <a href="/" class="btn-volver"><i class="fas fa-home"></i> Inicio</a>
+    </div>
+
+    <!-- Formulario -->
+    <div class="container">
+        <form id="miFormulario">
+            <h2>Formulario de Contacto</h2>
+
+            <!-- Datos personales -->
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre:
+                    <input id="nombre" name="nombre" type="text" required />
+                </label>
+                <label for="email">Email:
+                    <input id="email" name="email" type="email" placeholder="ejemplo@ejemplo.com" required />
+                </label>
+                <label for="telefono">Teléfono:
+                    <input id="telefono" name="telefono" type="tel" placeholder="+569 xxxx xxxxx" />
+                </label>
+            </fieldset>
+
+            <!-- Tipo de contacto -->
+            <fieldset>
+                <legend>Tipo de contacto (requerido)</legend>
+                <div class="radio-inline">
+                    <label>
+                        <input id="personal" type="radio" name="tipo-cuenta" value="personal" class="Fcontacto" checked />
+                        Personal
+                    </label>
+                    <label>
+                        <input id="negocio" type="radio" name="tipo-cuenta" value="negocio" class="Fcontacto" />
+                        Negocio
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Con quién desea contactar -->
+            <fieldset>
+                <legend>¿Con quién desea contactar?</legend>
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="contacto-con" value="Carlos" class="Fcontacto" checked />
+                        Carlos
+                    </label>
+                    <label>
+                        <input type="radio" name="contacto-con" value="Vale" class="Fcontacto" />
+                        Vale
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Mensaje -->
+            <fieldset>
+                <legend>Mensaje</legend>
+                <label for="mensaje">
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="30" placeholder="Me gustaría ver la posibilidad de..."></textarea>
+                </label>
+            </fieldset>
+
+            <!-- Aceptación términos -->
+            <label for="terminos-y-condiciones" class="checkbox-label">
+                <input class="Fcontacto" id="terminos-y-condiciones" type="checkbox" required name="terminos-y-condiciones" />
+                Acepto los <a id="term" href="#">términos y condiciones</a>
+            </label>
+
+            <!-- Botón -->
+            <div class="centrar-boton">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container-footer">
+            <h6>&copy; 2025 Mi Sitio Web</h6>
+        </div>
+    </footer>
+</body>
+</html>

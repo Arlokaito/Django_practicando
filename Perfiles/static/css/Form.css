@@ -1,0 +1,121 @@
+/* formato del formulario */
+body{
+    font-family:"Montserrat",sans-serif;    /* Fuente del texto*/
+    font-weight: 300;                       /* Grosor de fuente del texto*/
+    background-color: black;              /* Fondo oscuro */
+    color: #F7F7F7;                       /* Texto claro */
+    max-width: 90%;                         /* Limita ancho */
+    margin: 0 auto;                         /* Centrado */
+}
+
+.container {
+    padding: 10%;                           /* Espaciado interno */
+    background-color: #333333;            /* Fondo más claro */
+}
+
+h2{
+    text-align: center;                     /* Lineación del texto */
+    font-family: "Montserrat", sans-serif;  /* Fuente del texto*/
+    font-weight: 600;                       /* Grosor de fuente del texto*/
+    font-size: 1.8rem;                      /* Tamaño de fuente del texto*/
+    padding: 10px 0px 20px 0px;             /* Espaciado interno */
+    text-decoration: underline;             /* Decoración del subryado */
+    text-decoration-color: rgb(167, 78, 78); /* Color del subrayado */
+}
+
+
+
+/* Contenido del formulario */
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    margin-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(167, 78, 78);
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.radio-inline {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap; 
+    margin-top: 0.5rem;
+}
+
+.radio-inline label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 0;
+}
+
+input, textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+#terminos-y-condiciones {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    display: inline; 
+}
+
+.centrar-boton {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.centrar-boton input[type="submit"] {
+    display: inline-block; /* permite centrado horizontal dentro del contenedor */
+    width: 80%;
+    max-width: 300px;
+    font-size: 1rem;
+    background-color: rgb(187, 47, 47);
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+}
+
+/* Pie */
+footer{
+    text-align: center;
+    gap: 1.5rem;
+    padding-bottom: 0;
+}
+
+.container-footer{
+    background-color: #333333;
+    padding-bottom: 5px;
+}
+
+#term{
+    text-decoration-color: #F7F7F7;
+    
+}
+
+
+/* boton inicio*/
+.btn-volver {
+    display: inline-block;
+    background-color: rgb(187, 47, 47);
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-volver:hover {
+    background-color: rgb(119, 25, 25);
+}
+
