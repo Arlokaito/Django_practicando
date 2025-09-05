@@ -120,10 +120,3 @@ python manage.py collectstatic --noinput
 Este proyecto es solo para fines educativos y de práctica.
 
 ```
-
----
-
-Si quieres, puedo hacer **una versión más resumida y atractiva** que quede perfecta para mostrar en GitHub, con secciones más visuales y enlaces a tu formulario y portafolio.  
-
-¿Quieres que haga esa versión?
-```
