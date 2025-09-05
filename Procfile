@@ -1,1 +1,1 @@
-web: gunicorn Proyecto_backend.wsgi --log-file -
+web: python manage.py collectstatic --noinput && gunicorn Proyecto_backend.wsgi:application --bind 0.0.0.0:$PORT
